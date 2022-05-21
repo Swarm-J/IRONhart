@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+  <div>
+      <br>
+      <h1> Tour Dates </h1>
+      <br>
+      <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Date</th>
+              <th scope="col">Venue</th>
+              <th scope="col">Location</th>
+              <th scope="col">Tickets</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Feb 21, 2022</td>
+              <td>Burger Weeshuis, Deventer</td>
+              <td>Deventer, Netherlands</td>
+              <td> <a class="nav-link" href="https://www.burgerweeshuis.nl/info/tickets" target="_blank">Get Tickets</a> 
+              </td>
+            </tr>
+            <tr>
+              <td>May 5, 2022</td>
+              <td>Amsterdam Arena, Amsterdam</td>
+              <td>Amsterdam, Netherlands</td>
+              <td> <a class="nav-link" href="https://www.mojo.nl/" target="_blank">Get Tickets</a> 
+              </td>
+            </tr>
+            <tr>
+              <td>Jul 30, 2022</td>
+              <td>Tomorrowland, Boom</td>
+              <td>Boom, Belgium</td>
+              <td> <a class="nav-link" href="https://www.tomorrowland.com/en/festival/tickets" target="_blank">Get Tickets</a> 
+              </td>
+            </tr>
+          </tbody>
+        </table>
+</div>
+
+
+{% endblock %}

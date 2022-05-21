@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+    <h1> Contact </h1>
+    <br/>
+    <p>For business inquiries</p>
+    <br/>
+
+{% for message in get_flashed_messages() %}
+<div class="alert alert-warning alert-dismissible fade show w-50 center-alert" role="alert">
+    <strong>{{ message }}</strong>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+{% endfor %}
+
+{% for error in form.message.errors %}
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>{{ error }}</strong>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+{% endfor %}
+
+    
+
+    <form method="POST">
+     
+        {{ form.hidden_tag() }}
+
+        {{ form.name(class="form-control w-50 p-2 center-form", placeholder="Name") }}
+        <br>
+        {{ form.subject(class="form-control w-50 p-2 center-form", placeholder="Subject") }}
+        <br>
+        {{ form.email(class="form-control w-50 p-2 center-form", placeholder="Email Address") }}
+        <br>
+        {{ form.message(class="form-control w-50 p-2 center-form", rows=5, placeholder="Your inquiry (maximum of 400 characters)") }}
+        <br>
+        {{ form.submit(class="btn btn-secondary") }}
+    </form>
+
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<html>
+    <br>
+    <h2>IRONhart Dives Deep Live!</h2>
+    <p>Ironhart will record his dives deep session live every last Saturday of the month.
+        Check the Music section for previous recordings!
+    </p>
+    <br>
+  <body>
+    <!-- Add a placeholder for the Twitch embed -->
+    <div id="twitch-embed"></div>
+
+    <!-- Load the Twitch embed JavaScript file -->
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-embed", {
+        width: 1100,
+        height: 700,
+        channel: "IRONhartNL"
+      });
+    </script>
+  </body>
+</html>
+
+{% endblock %}

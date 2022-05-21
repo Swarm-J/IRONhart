@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<a class="index_pointer" href="#news" Latest News>
+    <div class="background-image">
+
+        
+
+    <style>
+
+    * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .background-image {
+            background-image: url('/static/images/IRONHART.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+            
+        }
+
+        /* .background-image {
+            background-image: url('static/images/IRONHART.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+            pointer-events: painted;
+            
+        } */
+
+
+    </style>
+
+    </div>
+</a>
+<br>
+<div class="container">
+    
+    <h2 id="news"> Latest News </h2>
+    <br>
+
+    <div class="container-fluid">
+
+        <!-- 1st row */ -->
+        <div class="row">
+            <div class="square">
+              <header class="news-header"> APR 23, 2022</header>
+            <body> News </body>
+            <br>
+            <footer><a class="read-more" href="/music" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> Read More </a> </footer>
+            </div>
+          <div class="square">
+            <header class="news-header"> APR 23, 2022</header>
+            <body>Some More News</body>
+            <footer><a class="read-more" href="#"> Read More </a></footer>
+          </div>
+          <div class="square">
+            <header class="news-header"> APR 23, 2022</header>
+            <body>Even More News</body>
+            <footer><a class="read-more" href="#"> Read More </a></footer>
+          </div>
+        </div>
+
+
+        <!-- 2nd row */ -->
+        <div class="row">
+            <div class="square">
+              <header class="news-header"> APR 23, 2022</header>
+            <body> News </body>
+            <br>
+            <footer><a class="read-more" href="#"> Read More </a></footer>
+          </div>
+          <div class="square">
+            <header class="news-header"> APR 23, 2022</header>
+            <body>Some More News</body>
+            <footer><a class="read-more" href="#"> Read More </a></footer>
+          </div>
+          <div class="square">
+            <header class="news-header"> APR 23, 2022</header>
+            <body>Even More News</body>
+            <footer><a class="read-more" href="#"> Read More </a></footer>
+          </div>
+        </div>
+
+        <!-- 3rd row */ -->
+        <div class="row">
+            <div class="square">
+              <header class="news-header"> APR 23, 2022</header>
+            <body> News </body>
+            <br>
+            <footer><a class="read-more" href="#"> Read More </a></footer>
+          </div>
+          <div class="square">
+            <header class="news-header"> APR 23, 2022</header>
+            <body>Some More News</body>
+            <footer><a class="read-more" href="#"> Read More </a></footer>
+          </div>
+          <div class="square">
+            <header class="news-header"> APR 23, 2022</header>
+            <body>Even More News</body>
+            <footer><a class="read-more" href="#"> Read More </a></footer>
+          </div>
+        </div>
+          
+          </div>
+      </div>
+        <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">APR 23, 2022</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Fake News
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+</div>
+</div>
+
+{% endblock %}

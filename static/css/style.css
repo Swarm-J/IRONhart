@@ -1,0 +1,136 @@
+h1{
+    color:white;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+body{
+    color: white;
+    background: rgb(46, 42, 42);
+    text-align: center;
+}
+
+.center-alert, .center-form {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar-brand {
+    font-size: 2em;
+}
+
+.navtop a
+{
+    position: relative;
+
+}
+
+.navtop a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(136, 21, 21);
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.navtop a:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
+.nav-item {
+    font-size: 20px;
+    margin-right: 20px;
+
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.footer {
+    font-size: 10px;
+    text-align: center;
+}
+
+.fa {
+    color: white;
+    background: none;
+    padding: 50px;
+    font-size: 50px!important;
+    text-decoration: none;
+  }
+  
+.fa:hover { 
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.75em);
+    color: rgb(136, 21, 21);
+}
+
+.img_adjust {
+    height: 100%;;
+    width: 100%;
+    object-fit: contain;
+}
+
+.table {
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.column * {margin:10px}
+
+.index_pointer:hover {
+    cursor: url('/static/images/w.png'), auto;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  width: 5vw;
+  height: 5vw;
+}
+
+.news-header {
+    font-size: smaller;
+    color: gray;
+}
+
+a.read-more {
+    box-shadow: inset 0 0 0 0 rgb(136, 21, 21);
+    color: rgb(136, 21, 21);
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    text-decoration: none;
+}
+
+a.read-more:hover {
+    box-shadow: inset 100px 0 0 0 rgb(136, 21, 21);
+    color: white;
+}
+
+
+.square {
+    float: left;
+    position: relative;
+    width: 30%;
+    padding-bottom : 15%;
+    margin:1.66%;
+    background-color:#2b2828;
+    overflow:hidden;
+}
+
+.square:hover {
+    background-color: rgb(53, 52, 52);
+}
+
+.modal-body, .modal-header, .modal-footer  {
+    background-color: #2b2828;
+}
